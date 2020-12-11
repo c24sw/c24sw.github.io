@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+​
+<head>
+    <title></title>
+​
+    <style type="text/css">
+    	#sam{
+    		background-color:lightblue;
+    		width:300px;
+    		height:300px;
+    		
+
+    	}
+    	#heading{
+    		width: 300px;
+    		height: 32px;
+    		
+    	}
+    	p {
+    		font-size: 32px;
+    	}
+    	#instructions{
+    		width:300px;
+    		height:30px;
+
+
+    	}
+    </style>
+</head>
+​
+<body>
+​	<div id="heading">
+		<p>Opacity Randomizer!</p> 
+	</div>
+	
+
+	<div id="sam"></div>
+    <script type="text/javascript">
+   		var x = "hello";
+   		var box = document.getElementById("sam");
+    	box.addEventListener("click", function(){
+    	var random = Math.random()
+    		box.style.opacity= random;
+    		console.log(random);
+    })
+    function sayHi() {
+        console.log(x)
+    }
+   document.addEventListener("click", sayHi)
+    </script>
+<div id="instructions"> 
+		<p> Click on the box to change its opacity</p></div>
+</body>
+​
+</html>
